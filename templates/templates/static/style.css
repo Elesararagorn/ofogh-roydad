@@ -1,0 +1,23 @@
+body {
+    direction: ltr;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    margin: 30px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+blockquote {
+    border-left: 4px solid #555;
+    padding-left: 15px;
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 25px auto;
+}
