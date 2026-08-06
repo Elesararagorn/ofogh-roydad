@@ -26,4 +26,11 @@ def create_html(article):
 </html>
 """
 
-    return html
+    with open(
+        "output/article.html",
+        "w",
+        encoding="utf-8"
+    ) as file:
+        file.write(html)
+
+    return "output/article.html"
