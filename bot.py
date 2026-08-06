@@ -43,9 +43,10 @@ async def get_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     file_path = create_html(article)
 
-    await update.message.reply_text(
-        f"مقاله ساخته شد: {file_path}"
-    )
+    await update.message.reply_document(
+    document=open(file_path, "rb"),
+    caption="مقاله آماده شد."
+)
 
     return ConversationHandler.END
 
