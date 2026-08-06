@@ -11,6 +11,7 @@ from telegram.ext import (
 )
 
 from content import Article
+from generator import create_html
 
 
 TOKEN = os.getenv("BOT_TOKEN")
@@ -40,8 +41,10 @@ async def get_title(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def get_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
     article.text = update.message.text
 
+    file_path = create_html(article)
+
     await update.message.reply_text(
-        "مقاله دریافت شد."
+        f"مقاله ساخته شد: {file_path}"
     )
 
     return ConversationHandler.END
