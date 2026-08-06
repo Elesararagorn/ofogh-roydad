@@ -2,22 +2,48 @@ body {
     direction: ltr;
     text-align: left;
     font-family: Arial, sans-serif;
-    line-height: 1.8;
-    margin: 30px;
+    line-height: 1.9;
+    margin: 40px auto;
+    max-width: 850px;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 36px;
+    margin-bottom: 30px;
 }
 
-blockquote {
-    border-left: 4px solid #555;
-    padding-left: 15px;
-    font-style: italic;
+p {
+    font-size: 18px;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 800px;
+    margin: 35px auto;
     display: block;
-    margin: 25px auto;
+}
+
+details {
+    background: #f5f5f5;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+blockquote {
+    border-left: 5px solid #555;
+    padding-left: 20px;
+    margin: 30px 0;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
 }
